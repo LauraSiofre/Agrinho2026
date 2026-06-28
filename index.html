@@ -30,7 +30,7 @@
     <input type="radio" id="opcao2" name="sustentavel" value="lixo">
     <label for="opcao2">Separar o lixo</label><br>
     
-    <input type="radio" id="opcao1" name="sustentavel" value="diminuir">
+    <input type="radio" id="opcao3" name="sustentavel" value="diminuir">
     <label for="opcao1">diminuir o uso de automóveis</label><br>
 
     <button type="button" onclick="votar()">Votar</button>
@@ -42,5 +42,7 @@
   function votar() {
     const selecionado = document.querySelector('input[name="sustentavel"]:checked');
     if (selecionado) {
-      document.getElementById("resultado").innerHTML = "Obrigada em votar" 
+      document.getElementById("resultado").innerHTML = "Obrigada por votar" 
+    }
+  }
 </script>
