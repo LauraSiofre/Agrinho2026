@@ -1,11 +1,38 @@
 <!DOCTYPE html>
-<html>
-<title>Quiz</title>
-<meta charset="utf-8"/>
+<html lang="pt-BR">
 <head>
-<lody>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz sobre Agroforte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <div id="start-screen" class="screen">
+            <h1>Você sabe oque é o agrofote?</h1>
+            <p>Bom, o Agroforte Refere-se à agricultura forte e de longo prazo, que busca o equilíbrio entre alta produtividade e conservação do meio ambiente, utilizando práticas sustentáveis como plantio direto e integração lavoura-pecuária-floresta!</p>
+            <button id="start-btn" class="btn">Vamos começar?</button>
+        </div>
+
+        <div id="quiz-screen" class="screen hidden">
+            <div class="progress-bar-container">
+                <div id="progress-bar"></div>
+            </div>
+            <h2 id="question-text">Aqui vai a pergunta...</h2>
+            <div id="options-container" class="options-grid">
+                </div>
+            <div id="feedback" class="feedback hidden"></div>
+            <button id="next-btn" class="btn hidden">Avançar ➡️</button>
+        </div>
+
+        <div id="result-screen" class="screen hidden">
+            <h2>E o resultado saiu! 🎉</h2>
+            <p id="result-text">Você mandou muito bem!</p>
+            <button id="restart-btn" class="btn">Tentar de novo 🔄</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
-<h1 Agro forte h1>
-        
