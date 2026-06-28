@@ -8,6 +8,14 @@
     background-color: #569186;
   }
 </style>
+     <script>
+  window.addEventListener('beforeunload', function (e) {
+    // Cancela o evento conforme padrão
+    e.preventDefault();
+    // Mensagem padrão para navegadores modernos
+    e.returnValue = '';
+  });
+</script>
 </head>
 <body>
      <h1>Quais atividades podem reduzir o impacto no meio ambiente?</h1>
